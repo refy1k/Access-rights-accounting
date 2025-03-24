@@ -4,26 +4,10 @@
              xmlns:local="clr-namespace:Access_rights_accounting"
              StartupUri="MainWindow.xaml">
     <Application.Resources>
-        <Style x:Key="H2">
-            <Setter Property="TextBlock.FontSize" Value="40"/>
-        </Style>
-
-        <Style TargetType="TextBox">
-            <Setter Property="Width" Value="200"/>
-            <Setter Property="HorizontalAlignment" Value="Left"/>
-            <Setter Property="Margin" Value="0 5"/>
-            <Setter Property="Template">
-                <Setter.Value>
-                    <ControlTemplate TargetType="TextBox">
-                        <Border Background="{TemplateBinding Background}" 
-                                BorderBrush="{TemplateBinding BorderBrush}" 
-                                BorderThickness="{TemplateBinding BorderThickness}" 
-                                CornerRadius="5">
-                            <ScrollViewer Margin="0" x:Name="PART_ContentHost"/>
-                        </Border>
-                    </ControlTemplate>
-                </Setter.Value>
-            </Setter>
+        <Style x:Key="IntroText">
+            <Setter Property="TextBlock.FontSize" Value="90"/>
+            <Setter Property="TextBlock.Foreground" Value="White"/>
+            <Setter Property="TextBlock.FontFamily" Value="Franklin Gothic Demi Cond"/>
         </Style>
     </Application.Resources>
 </Application>

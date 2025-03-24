@@ -13,23 +13,16 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace Access_rights_accounting
+namespace Access_rights_accounting.Pages.Loading_Pages
 {
     /// <summary>
-    /// Логика взаимодействия для MainWindow.xaml
+    /// Логика взаимодействия для Intro.xaml
     /// </summary>
-    public partial class MainWindow : Window
+    public partial class Intro : Page
     {
-        public MainWindow()
+        public Intro()
         {
             InitializeComponent();
-            this.Loaded += MainWindow_Loaded;
-        }
-
-        private void MainWindow_Loaded(object sender, RoutedEventArgs e)
-        {
-            // Перейти к странице авторизации при старте
-            MainFrame.Navigate(new Authorization());
         }
     }
 }
