@@ -1,6 +1,4 @@
-﻿using Access_rights_accounting.Classes;
-using Access_rights_accounting.Pages.Workspace;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -15,21 +13,16 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace Access_rights_accounting
+namespace Access_rights_accounting.Pages.Workspace
 {
     /// <summary>
-    /// Логика взаимодействия для Authorization.xaml
+    /// Логика взаимодействия для MainWorkSpace.xaml
     /// </summary>
-    public partial class Authorization : Page
+    public partial class MainWorkSpace : Page
     {
-        public Authorization()
+        public MainWorkSpace()
         {
             InitializeComponent();
-        }
-
-        private void btnAuthorization_Click(object sender, RoutedEventArgs e)
-        {
-            PageNavigation.MainFrame.Navigate(new MainWorkSpace());
         }
     }
 }

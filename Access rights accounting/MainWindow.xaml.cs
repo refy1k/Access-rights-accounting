@@ -1,4 +1,6 @@
-﻿using System;
+﻿using Access_rights_accounting.Classes;
+using Access_rights_accounting.Pages.Loading_Pages;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -23,12 +25,15 @@ namespace Access_rights_accounting
         public MainWindow()
         {
             InitializeComponent();
-            this.Loaded += MainWindow_Loaded;
+            MainFrame.Navigate(new SplashWindow());
+            ShowAuthorizationPageAfterDelay();
+
+            PageNavigation.MainFrame = MainFrame;
         }
 
-        private void MainWindow_Loaded(object sender, RoutedEventArgs e)
+        private async void ShowAuthorizationPageAfterDelay()
         {
-            // Перейти к странице авторизации при старте
+            await Task.Delay(1200);
             MainFrame.Navigate(new Authorization());
         }
     }

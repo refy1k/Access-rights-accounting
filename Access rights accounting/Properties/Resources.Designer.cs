@@ -63,16 +63,6 @@ namespace Access_rights_accounting.Properties {
         /// <summary>
         ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap _lock {
-            get {
-                object obj = ResourceManager.GetObject("_lock", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
-        /// </summary>
         internal static System.Drawing.Bitmap ESecure_logo {
             get {
                 object obj = ResourceManager.GetObject("ESecure_logo", resourceCulture);
@@ -83,9 +73,9 @@ namespace Access_rights_accounting.Properties {
         /// <summary>
         ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap key {
+        internal static System.Drawing.Bitmap key_black {
             get {
-                object obj = ResourceManager.GetObject("key", resourceCulture);
+                object obj = ResourceManager.GetObject("key_black", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -103,9 +93,39 @@ namespace Access_rights_accounting.Properties {
         /// <summary>
         ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap lock_black {
+            get {
+                object obj = ResourceManager.GetObject("lock_black", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap lock_white {
             get {
                 object obj = ResourceManager.GetObject("lock_white", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap person_white {
+            get {
+                object obj = ResourceManager.GetObject("person_white", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap persone_black {
+            get {
+                object obj = ResourceManager.GetObject("persone_black", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

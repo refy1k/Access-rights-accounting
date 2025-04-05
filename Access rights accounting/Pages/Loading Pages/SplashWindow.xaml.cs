@@ -16,11 +16,11 @@ using System.Windows.Shapes;
 namespace Access_rights_accounting.Pages.Loading_Pages
 {
     /// <summary>
-    /// Логика взаимодействия для Intro.xaml
+    /// Логика взаимодействия для SplashWindow.xaml
     /// </summary>
-    public partial class Intro : Page
+    public partial class SplashWindow : Page
     {
-        public Intro()
+        public SplashWindow()
         {
             InitializeComponent();
         }
