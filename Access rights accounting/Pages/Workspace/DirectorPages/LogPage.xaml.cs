@@ -1,5 +1,5 @@
 ﻿using Access_rights_accounting.Classes;
-using Access_rights_accounting.Pages.Workspace.EmployeePages;
+using Access_rights_accounting.Model;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -15,22 +15,22 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace Access_rights_accounting.Pages.Workspace
+namespace Access_rights_accounting.Pages.Workspace.DirectorPages
 {
     /// <summary>
-    /// Логика взаимодействия для MainWorkSpace.xaml
+    /// Логика взаимодействия для LogPage.xaml
     /// </summary>
-    public partial class MainWorkSpace : Page
+    public partial class LogPage : Page
     {
-        public MainWorkSpace()
+        public LogPage()
         {
             InitializeComponent();
-            WorkFrame.Navigate(new ApplicationPage());
-            PageNavigation.WorkFrame = WorkFrame;
+            DGLogPage.ItemsSource = Accounting_for_access_rightsEntities.GetContext().Logs.ToList();
         }
-        private void Logout_Click(object sender, RoutedEventArgs e)
+
+        private void BtnGoBack_Click(object sender, RoutedEventArgs e)
         {
-            PageNavigation.MainFrame.Navigate(new Authorization());
+            PageNavigation.WorkFrame.Navigate(new ChoicePage());
         }
     }
 }

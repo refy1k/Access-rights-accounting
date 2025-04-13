@@ -8,48 +8,59 @@
       d:DesignHeight="450" d:DesignWidth="800"
       Title="Authorization">
 
-    <Grid>
+    <Grid Background="#EADCCE">
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition Height="11*"/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
         <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="2*" />
-            <ColumnDefinition Width="1.9*" />
+            <ColumnDefinition/>
+            <ColumnDefinition Width="1.5*"/>
+            <ColumnDefinition/>
         </Grid.ColumnDefinitions>
-        <!--Background-->
-        <Rectangle Grid.ColumnSpan="2">
-            <Rectangle.Fill>
-                <LinearGradientBrush StartPoint="0,0" EndPoint="1,1">
-                    <GradientStop Color="#951111" Offset="0.0" />
-                    <GradientStop Color="#640909" Offset="0.25" />
-                    <GradientStop Color="#2E0303" Offset="0.75" />
-                </LinearGradientBrush>
-            </Rectangle.Fill>
-        </Rectangle>
-        <!--Logo-->
-        <StackPanel Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Center" Height="336" Width="332">
-            <Image Source="/Resources/ESecure_logo.png" Width="150"/>
-            <TextBlock Text="mylfery" Style="{StaticResource IntroText}" TextWrapping="Wrap" TextAlignment="Center"/>
-        </StackPanel>
 
-        <!--Panel of authorization-->
-        <Border Background="#951111" Margin="30 150" CornerRadius="20">
-            <Border.Effect>
-                <DropShadowEffect ShadowDepth="10"/>
-            </Border.Effect>
-
+        <Border Grid.Column="1" Grid.Row="1" Background="#1C4B41" CornerRadius="30">
             <Grid>
-                <Grid.ColumnDefinitions>
-                    <ColumnDefinition Width="50"/>
-                    <ColumnDefinition/>
-                </Grid.ColumnDefinitions>
                 <Grid.RowDefinitions>
-                    <RowDefinition/>
-                    <RowDefinition/>
+                    <RowDefinition Height="1.2*"/>
+                    <RowDefinition Height="2*"/>
                     <RowDefinition/>
                 </Grid.RowDefinitions>
-                <Image Source="/Resources/person_white.png" Grid.Row="0"/>
-                <TextBox Grid.Row="0" Grid.Column="1" Margin="0 5 10 5" FontSize="50"/>
-                <Image Source="/Resources/key_white.png" Grid.Row="1"/>
-                <TextBox Grid.Row="1" Grid.Column="1" Margin="0 5 10 5" FontSize="50"/>
-                <Button Grid.Row="2" Grid.Column="1" Margin="50 5" Content="Авторизация" Name="btnAuthorization" Click="btnAuthorization_Click"/>
+
+                <!--Лэндинг-->
+                <StackPanel Grid.Row="0" HorizontalAlignment="Center" VerticalAlignment="Center" Orientation="Horizontal">
+                    <Image Source="/Resources/logo_small.png" Height="80" />
+                    <TextBlock Text="ESecure" Foreground="White" FontSize="65"/>
+                </StackPanel>
+
+                <!--Разметка TextBox'ов-->
+                <Grid Grid.Row="1">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="0.2*"/>
+                        <ColumnDefinition/>
+                    </Grid.ColumnDefinitions>
+                    <Grid.RowDefinitions>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                    </Grid.RowDefinitions>
+
+                    <!--Разметка инфокарточек-->
+                    <Image Source="/Resources/person.png" Grid.Row="0"/>
+                    <Image Source="/Resources/key.png" Grid.Row="1"/>
+
+                    <TextBox Grid.Column="1" Grid.Row="0" Margin="5 20" Background="#F3EFE7" Foreground="#1C4B41" FontSize="50"/>
+                    <TextBox Grid.Column="1" Grid.Row="1" Margin="5 20" Background="#F3EFE7" Foreground="#1C4B41" FontSize="50"/>
+                </Grid>
+
+                <!--Кнопка авторизации-->
+                <Border Grid.Row="2">
+                    <Button Content="Авторизация" 
+                        Margin="30 20" FontSize="30" 
+                        Foreground="#1C4B41" Background="#F3EFE7"
+                        FontWeight="Bold">
+                    </Button>
+                </Border>
             </Grid>
         </Border>
     </Grid>

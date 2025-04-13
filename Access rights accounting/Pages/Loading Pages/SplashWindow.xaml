@@ -8,19 +8,9 @@
       d:DesignHeight="450" d:DesignWidth="800"
       Title="SplashWindow">
 
-    <Grid>
-        <Rectangle>
-            <Rectangle.Fill>
-                <LinearGradientBrush StartPoint="0,0" EndPoint="1,1">
-                    <GradientStop Color="#951111" Offset="0.0" />
-                    <GradientStop Color="#640909" Offset="0.25" />
-                    <GradientStop Color="#2E0303" Offset="0.75" />
-                </LinearGradientBrush>
-            </Rectangle.Fill>
-        </Rectangle>
-
+    <Grid Background="#EADCCE">
         <StackPanel Orientation="Horizontal" VerticalAlignment="Center" HorizontalAlignment="Left" Grid.ColumnSpan="2" Margin="66,0,0,0">
-            <Image Source="/Resources/ESecure_logo.png" Height="150"/>
+            <Image Source="/Resources/logo_small.png" Height="170" Margin="10"/>
             <StackPanel>
                 <TextBlock Style="{StaticResource IntroText}" Text="Culture of"/>
                 <TextBlock Style="{StaticResource IntroText}" Text="cyber secure"/>

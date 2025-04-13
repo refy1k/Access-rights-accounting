@@ -1,5 +1,6 @@
 ﻿using Access_rights_accounting.Classes;
 using Access_rights_accounting.Pages.Loading_Pages;
+using Access_rights_accounting.Pages.Workspace;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -27,14 +28,13 @@ namespace Access_rights_accounting
             InitializeComponent();
             MainFrame.Navigate(new SplashWindow());
             ShowAuthorizationPageAfterDelay();
-
             PageNavigation.MainFrame = MainFrame;
         }
 
         private async void ShowAuthorizationPageAfterDelay()
         {
             await Task.Delay(1200);
-            MainFrame.Navigate(new Authorization());
+            MainFrame.Navigate(new DirectorWorkSpace());
         }
     }
 }

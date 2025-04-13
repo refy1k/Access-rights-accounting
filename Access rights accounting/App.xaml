@@ -6,8 +6,21 @@
     <Application.Resources>
         <Style x:Key="IntroText">
             <Setter Property="TextBlock.FontSize" Value="80"/>
-            <Setter Property="TextBlock.Foreground" Value="White"/>
+            <Setter Property="TextBlock.Foreground" Value="#1C4B41"/>
             <Setter Property="TextBlock.FontFamily" Value="Franklin Gothic Demi Cond"/>
+        </Style>
+
+        <Style x:Key="ButtonMenuText">
+            <Setter Property="TextBlock.FontSize" Value="25"/>
+            <Setter Property="TextBlock.Margin" Value="5 2"/>
+            <Setter Property="TextBlock.Background" Value="Black"/>
+            <Setter Property="TextBlock.Foreground" Value="White"/>
+        </Style>
+
+        <Style TargetType="Button">
+            <Setter Property="Background" Value="#1C4B41"/>
+            <Setter Property="Foreground" Value="#EADCCE"/>
+            <Setter Property="FontSize" Value="30"/>
         </Style>
     </Application.Resources>
 </Application>
